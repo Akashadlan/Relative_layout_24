@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnminus : Button
     lateinit var btnmul : Button
     lateinit var btndivaid : Button
-    var number = 2
+    var number = 0
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,19 +35,19 @@ class MainActivity : AppCompatActivity() {
         btnnumber.text = number.toString()
 
         btnplus.setOnClickListener {
-            number = 2
+            number += 2
             btnnumber.text = number.toString()
         }
         btnminus.setOnClickListener {
-            number = 2
+            number -= 2
             btnnumber.text = number.toString()
         }
         btnmul.setOnClickListener {
-            number = 2
+            number *= 2
             btnnumber.text = number.toString()
         }
         btndivaid.setOnClickListener {
-            number = 2
+            number /= 2
             btnnumber.text = number.toString()
         }
     }
